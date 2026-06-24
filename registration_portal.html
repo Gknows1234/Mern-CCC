@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Portal</title>
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f0f0f,#1a1a2e,#16213e);
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:#111827;
+    color:#00e5ff;
+    text-align:center;
+    padding:20px;
+    border-bottom:2px solid #00e5ff;
+}
+
+header h1{
+    letter-spacing:3px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#1f2937;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* FORM CARD */
+
+.container{
+    width:500px;
+    margin:40px auto;
+    padding:30px;
+    background:#1e293b;
+    border-radius:20px;
+    border:1px solid #00e5ff;
+    box-shadow:0 0 20px rgba(0,229,255,0.3);
+}
+
+.container h2{
+    text-align:center;
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=date]{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #555;
+    background:#2d3748;
+    color:white;
+}
+
+input:focus{
+    outline:none;
+    border-color:#00e5ff;
+}
+
+.forgot{
+    text-align:right;
+    margin-bottom:15px;
+}
+
+.forgot a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+
+.gender,
+.hobbies{
+    margin:10px 0 20px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.btn{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.register{
+    background:linear-gradient(45deg,#00c853,#00e676);
+}
+
+.reset{
+    background:linear-gradient(45deg,#d50000,#ff5252);
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+/* ABOUT & CONTACT */
+
+.info-section{
+    width:80%;
+    margin:30px auto;
+    padding:25px;
+    background:#1e293b;
+    border-radius:15px;
+    border:1px solid #121819;
+    box-shadow:0 0 15px rgba(0,229,255,0.2);
+}
+
+.info-section h2{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    background:#111827;
+    color:#00e5ff;
+    padding:15px;
+    border-top:2px solid #00e5ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>🚀 Registration Portal</h1>
+</header>
+
+<nav>
+    <a href="#home">🏠 Home</a>
+    <a href="#register">📝 Register</a>
+    <a href="#about">ℹ About</a>
+    <a href="#contact">📞 Contact</a>
+</nav>
+
+<div class="container" id="register">
+
+    <h2>Create Account</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
+
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <br><br>
+
+        <label>Gender</label>
+
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Hobbies</label>
+
+        <div class="hobbies">
+            <input type="checkbox"> Reading
+            <input type="checkbox"> Music
+            <input type="checkbox"> Sports
+            <input type="checkbox"> Coding
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Register" class="btn register">
+            <input type="reset" value="Refresh" class="btn reset">
+        </div>
+
+    </form>
+
+</div>
+
+<section id="about" class="info-section">
+    <h2>About Us</h2>
+
+    <p>
+        This Registration Portal is developed using HTML and CSS.
+        It demonstrates forms, navigation menus, styling, radio buttons,
+        checkboxes, calendar inputs, and smooth scrolling sections.
+    </p>
+</section>
+
+<section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+
+    <p>📧 Email : support@portal.com</p>
+    <br>
+
+    <p>📞 Phone : +91 9876543210</p>
+    <br>
+
+    <p>📍 Address : Chennai, Tamil Nadu, India</p>
+</section>
+
+<footer>
+    <p>© 2026 Registration Portal | HTML & CSS Mini Project</p>
+</footer>
+
+</body>
+</html>
