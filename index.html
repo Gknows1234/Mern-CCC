@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Website</title>
+<style>
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+
+  /* HEADER */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  /* CONTAINER FOR SIDEBAR + CONTENT */
+  .container {
+    display: flex;
+  }
+
+  /* SIDEBAR / MENU */
+  .sidebar {
+    background-color: #f0f0f0;
+    width: 150px;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+
+  .sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  .sidebar ul li a:hover {
+    color: blue;
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    padding: 20px;
+    flex: 1;
+  }
+
+  .content h1 {
+    color: #333333;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    My First Website
+  </div>
+
+  <div class="container">
+
+    <!-- LEFT SIDE MENU -->
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <h1>Welcome to My Website!</h1>
+      <p>Hi! This is a simple website I made using only HTML and CSS.</p>
+      <p>On the left side you can see a menu with some links.</p>
+      <p>This is the main content area where all the information goes.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
