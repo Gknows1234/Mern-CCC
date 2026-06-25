@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Button Example</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Type something here...">
+    <button id="myButton">Click Me!</button>
+    <p id="resultText"></p>
+
+    <script>
+        const inputElement = document.getElementById('myInput');
+        const buttonElement = document.getElementById('myButton');
+        const resultElement = document.getElementById('resultText');
+
+        buttonElement.addEventListener('click', function() {
+            const inputValue = inputElement.value;
+            resultElement.textContent = "You typed: " + inputValue;
+        });
+    </script>
+</body>
+</html>
